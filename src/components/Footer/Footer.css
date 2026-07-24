@@ -1,0 +1,210 @@
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+    position:relative;
+    background:#050816;
+    padding:80px 0 25px;
+    border-top:1px solid rgba(255,255,255,.08);
+    overflow:hidden;
+}
+
+.footer-container{
+
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+    padding-bottom:40px;
+}
+
+.footer-left h2{
+
+    color:white;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.footer-left p{
+
+    color:#94a3b8;
+    line-height:1.9;
+    max-width:400px;
+}
+
+.footer-center h3,
+.footer-right h3{
+
+    color:white;
+    margin-bottom:20px;
+}
+
+.footer-center{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-center a{
+
+    color:#94a3b8;
+    text-decoration:none;
+    margin-bottom:12px;
+    transition:.3s;
+}
+
+.footer-center a:hover{
+
+    color:#60a5fa;
+    transform:translateX(8px);
+}
+
+.footer-social{
+
+    display:flex;
+    gap:18px;
+}
+
+.footer-social a{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:20px;
+
+    transition:.35s;
+}
+
+.footer-social a:hover{
+
+    background:#2563eb;
+
+    transform:translateY(-6px);
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:25px;
+
+    text-align:center;
+}
+
+.footer-bottom p{
+
+    color:#94a3b8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+}
+
+.heart{
+
+    color:#ef4444;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.25);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-left p{
+
+margin:auto;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.footer-center{
+
+align-items:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.footer{
+
+padding:60px 0 20px;
+
+}
+
+.footer-left h2{
+
+font-size:28px;
+
+}
+
+.footer-bottom p{
+
+font-size:14px;
+
+}
+
+}

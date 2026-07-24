@@ -1,0 +1,225 @@
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills{
+    position:relative;
+    padding:120px 0;
+    background:#050816;
+    overflow:hidden;
+}
+
+.skills-container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    position:relative;
+    z-index:10;
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.skills-blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(170px);
+}
+
+.blur-left{
+    width:420px;
+    height:420px;
+    background:#2563eb55;
+    left:-120px;
+    top:-100px;
+}
+
+.blur-right{
+    width:380px;
+    height:380px;
+    background:#7c3aed44;
+    right:-120px;
+    bottom:-120px;
+}
+
+/* ===========================
+   HEADING
+=========================== */
+
+.skills-heading{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.skills-subtitle{
+    color:#60a5fa;
+    letter-spacing:3px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.skills-title{
+    color:white;
+    font-size:52px;
+    margin-top:15px;
+    font-weight:800;
+}
+
+.skills-description{
+    color:#94a3b8;
+    max-width:700px;
+    margin:25px auto 0;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.skill-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.35s;
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 20px 50px rgba(37,99,235,.25);
+}
+
+.skill-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.skill-header h3{
+
+    color:white;
+
+    font-size:22px;
+}
+
+.skill-header span{
+
+    color:#60a5fa;
+
+    font-weight:700;
+}
+
+/* ===========================
+   PROGRESS BAR
+=========================== */
+
+.progress-bar{
+
+    width:100%;
+
+    height:10px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.08);
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #2563eb,
+        #38bdf8
+    );
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.skills-title{
+
+font-size:40px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.skills{
+
+padding:90px 0;
+
+}
+
+.skills-title{
+
+font-size:30px;
+
+}
+
+.skills-description{
+
+font-size:16px;
+
+}
+
+.skill-card{
+
+padding:22px;
+
+}
+
+.skill-header h3{
+
+font-size:18px;
+
+}
+
+}
