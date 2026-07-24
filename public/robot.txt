@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://mukesh-portfolio-rho-six.vercel.app/sitemap.xml
